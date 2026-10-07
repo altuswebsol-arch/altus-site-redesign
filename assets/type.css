@@ -1,0 +1,21 @@
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik-regular.woff2') format('woff2'),url('fonts/aeonik-regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Aeonik';src:url('fonts/aeonik-bold.woff2') format('woff2'),url('fonts/aeonik-bold.woff') format('woff');font-weight:700;font-style:normal;font-display:swap}
+/* Altus new-design typography: Poppins + approved palette, applied everywhere.
+   Icon fonts (Font Awesome, Dashicons, <i> icons) are excluded so glyphs keep rendering. */
+body.alx-redesign *:not(i):not(.fa):not(.fas):not(.far):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-brands):not([class*="fa-"]):not(.dashicons):not([class*="dashicon"]),
+.elementor-108 *:not(i):not(.fa):not(.fas):not(.far):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-brands):not([class*="fa-"]):not(.dashicons):not([class*="dashicon"]) {
+  font-family:'Aeonik',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif !important;
+}
+/* Kept-raw blocks (forms, tools, widgets) inherit the new palette */
+.alx-raw { color:#3D4048; }
+.alx-raw h1, .alx-raw h2, .alx-raw h3, .alx-raw h4, .alx-raw h5, .alx-raw h6 { color:#212329; }
+.alx-raw p, .alx-raw li, .alx-raw span, .alx-raw div { color:inherit; }
+.alx-raw a:not(.btn-pill):not(.elementor-button):not(.wpr-button) { color:#1D4ED8; }
+.alx-raw a:not(.btn-pill):not(.elementor-button):not(.wpr-button):hover { color:#10B3FE; }
+.alx-raw input, .alx-raw textarea, .alx-raw select, .alx-raw button { color:#212329; }
+/* Footer: keep layout, unify type + accent */
+.elementor-108 a:hover { color:#10B3FE !important; }
+/* Remove the Royal Addons consultation popup site-wide */
+.wpr-template-popup, #wpr-popup-id-4072 { display:none !important; }
+/* Hide the old Royal Addons mega-menu header - the pill header replaces it */
+.wpr-mega-menu-container, .wpr-site-header { display:none !important; }

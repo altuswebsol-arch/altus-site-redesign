@@ -1,0 +1,1104 @@
+<!-- =========================================================
+     ALTUS WEB SOLUTIONS — HERO ONLY
+     Fully scoped for WordPress HTML Widget
+     No Header / No Navigation
+========================================================= -->
+
+<div id="altus-hero">
+
+  <div class="altus-hero-bg"></div>
+
+  <!-- Animated light streaks -->
+  <span class="altus-streak altus-streak-1"></span>
+  <span class="altus-streak altus-streak-2"></span>
+
+  <!-- Hero Content -->
+  <div class="altus-hero-inner">
+
+    <h1 class="altus-hero-title">
+
+      <span class="altus-mask">
+        <span>
+          We Build Websites
+          <span class="altus-accent">&amp;</span>
+        </span>
+      </span>
+
+      <span class="altus-mask">
+        <span>
+          AI That
+          <span class="altus-accent">Grow</span>
+        </span>
+      </span>
+
+      <span class="altus-mask">
+        <span>Your Business</span>
+      </span>
+
+    </h1>
+
+    <p class="altus-hero-sub">
+      Altus Web Solutions designs, builds and markets digital experiences UK businesses rely on — from school websites to AI-powered customer engagement.
+    </p>
+
+    <div class="altus-hero-ctas">
+
+      <a class="altus-btn-primary" href="https://altuswebsolutions.com/work/">
+        View Our Work
+      </a>
+
+      <a class="altus-btn-outline" href="https://altuswebsolutions.com/schedule-free-consultation/">
+        Speak With an Advisor
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       TRUST BAR
+  ====================================================== -->
+
+  <div class="altus-trust">
+
+    <div class="altus-trust-inner">
+
+      <span class="altus-trust-label">
+        TRUSTED BY AMBITIOUS BUSINESSES
+      </span>
+
+      <div class="altus-marquee">
+
+        <div class="altus-marquee-track">
+
+          <span>SCHOOLS <b>●</b></span>
+          <span>HEALTHCARE</span>
+          <span>REAL ESTATE</span>
+          <span>E-COMMERCE <b>●</b></span>
+          <span>FINTECH</span>
+          <span>TRADES</span>
+          <span>HOSPITALITY <b>●</b></span>
+          <span>PROFESSIONAL SERVICES</span>
+
+          <!-- Duplicate for seamless animation -->
+
+          <span>SCHOOLS <b>●</b></span>
+          <span>HEALTHCARE</span>
+          <span>REAL ESTATE</span>
+          <span>E-COMMERCE <b>●</b></span>
+          <span>FINTECH</span>
+          <span>TRADES</span>
+          <span>HOSPITALITY <b>●</b></span>
+          <span>PROFESSIONAL SERVICES</span>
+
+          <span>SCHOOLS <b>●</b></span>
+          <span>HEALTHCARE</span>
+          <span>REAL ESTATE</span>
+          <span>E-COMMERCE <b>●</b></span>
+          <span>FINTECH</span>
+          <span>TRADES</span>
+          <span>HOSPITALITY <b>●</b></span>
+          <span>PROFESSIONAL SERVICES</span>
+
+          <span>SCHOOLS <b>●</b></span>
+          <span>HEALTHCARE</span>
+          <span>REAL ESTATE</span>
+          <span>E-COMMERCE <b>●</b></span>
+          <span>FINTECH</span>
+          <span>TRADES</span>
+          <span>HOSPITALITY <b>●</b></span>
+          <span>PROFESSIONAL SERVICES</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<style>
+
+/* =========================================================
+   ALTUS HERO — GLOBAL VARIABLES
+========================================================= */
+
+#altus-hero {
+
+  --altus-black: #0A0A12;
+  --altus-navy: #242A36;
+  --altus-brand: #10B3FE;
+  --altus-brand-dark: #1D4ED8;
+  --altus-white: #FFFFFF;
+
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background: #212329;
+
+  color: #FFFFFF;
+
+  font-family:
+    'Aeonik',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+
+  isolation: isolate;
+
+}
+
+
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+#altus-hero .altus-hero-bg {
+
+  position: absolute;
+
+  inset: -6%;
+
+  z-index: -2;
+
+  will-change: transform;
+
+  background:
+
+    radial-gradient(
+      1100px 520px at 70% 30%,
+      rgba(16,179,254,.28),
+      transparent 62%
+    ),
+
+    radial-gradient(
+      900px 620px at 20% 75%,
+      rgba(64,42,160,.40),
+      transparent 60%
+    ),
+
+    radial-gradient(
+      700px 500px at 85% 85%,
+      rgba(16,179,254,.14),
+      transparent 60%
+    ),
+
+    linear-gradient(
+      180deg,
+      #0a0a18 0%,
+      #212329 70%
+    );
+
+  animation:
+    altus-bg-drift 16s ease-in-out infinite alternate,
+    altus-bg-in 2.6s cubic-bezier(.22,1,.36,1) 1.05s backwards;
+
+}
+
+
+/* Background entrance */
+
+@keyframes altus-bg-in {
+
+  from {
+    transform: scale(1.16);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+
+/* Background slow movement */
+
+@keyframes altus-bg-drift {
+
+  from {
+    transform:
+      scale(1)
+      translate(0,0);
+  }
+
+  to {
+    transform:
+      scale(1.12)
+      translate(-2.5%,2%);
+  }
+
+}
+
+
+/* Dark overlay */
+
+#altus-hero .altus-hero-bg::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7,7,15,.25) 0%,
+      transparent 35%,
+      rgba(7,7,15,.55) 100%
+    );
+
+}
+
+
+/* =========================================================
+   LIGHT STREAKS
+========================================================= */
+
+#altus-hero .altus-streak {
+
+  position: absolute;
+
+  height: 2px;
+
+  border-radius: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(16,179,254,.8),
+      transparent
+    );
+
+  filter: blur(1px);
+
+  animation:
+    altus-streak-animation 9s linear infinite;
+
+  opacity: .7;
+
+  pointer-events: none;
+
+}
+
+
+/* First streak */
+
+#altus-hero .altus-streak-1 {
+
+  width: 44vw;
+
+  top: 22%;
+
+  left: -10%;
+
+}
+
+
+/* Second streak */
+
+#altus-hero .altus-streak-2 {
+
+  width: 34vw;
+
+  top: 58%;
+
+  left: 20%;
+
+  animation-delay: -4s;
+
+  animation-duration: 12s;
+
+}
+
+
+@keyframes altus-streak-animation {
+
+  from {
+    transform: translateX(-30vw);
+  }
+
+  to {
+    transform: translateX(120vw);
+  }
+
+}
+
+
+/* =========================================================
+   HERO INNER
+========================================================= */
+
+#altus-hero .altus-hero-inner {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  max-width: 1460px;
+
+  margin: 0 auto;
+
+  padding:
+    150px
+    32px
+    120px;
+
+}
+
+
+/* =========================================================
+   TITLE MASK ANIMATION
+========================================================= */
+
+#altus-hero .altus-mask {
+
+  display: block;
+
+  overflow: hidden;
+
+}
+
+
+#altus-hero .altus-mask > span {
+
+  display: block;
+
+  transform: translateY(112%);
+
+  animation:
+    altus-rise-up
+    1.05s
+    cubic-bezier(.22,1,.36,1)
+    1.75s
+    both;
+
+}
+
+
+/* Individual line delays */
+
+#altus-hero .altus-mask:nth-child(2) > span {
+
+  animation-delay: 1.89s;
+
+}
+
+
+#altus-hero .altus-mask:nth-child(3) > span {
+
+  animation-delay: 2.03s;
+
+}
+
+
+@keyframes altus-rise-up {
+
+  to {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+#altus-hero .altus-hero-title {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-size:
+    clamp(44px, 7vw, 104px);
+
+  font-weight: 800;
+
+  letter-spacing: -.03em;
+
+  line-height: 1.04;
+
+  color: #FFFFFF;
+
+}
+
+
+/* Blue highlighted words */
+
+#altus-hero .altus-accent {
+
+  color: #10B3FE;
+
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+#altus-hero .altus-hero-sub {
+
+  margin:
+    26px
+    0
+    0;
+
+  max-width: 600px;
+
+  color:
+    rgba(255,255,255,.72);
+
+  font-size: 17px;
+
+  line-height: 1.6;
+
+  font-weight: 400;
+
+  opacity: 0;
+
+  animation:
+    altus-fade-up
+    1s
+    ease
+    2.4s
+    forwards;
+
+}
+
+
+@keyframes altus-fade-up {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(18px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: none;
+
+  }
+
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+#altus-hero .altus-hero-ctas {
+
+  display: flex;
+
+  gap: 14px;
+
+  margin-top: 36px;
+
+  flex-wrap: wrap;
+
+  opacity: 0;
+
+  animation:
+    altus-fade-up
+    1s
+    ease
+    2.55s
+    forwards;
+
+}
+
+
+/* Primary */
+
+#altus-hero .altus-btn-primary {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  background: #10B3FE;
+
+  color: #FFFFFF;
+
+  font-size: 13.5px;
+
+  font-weight: 600;
+
+  padding:
+    13px
+    26px;
+
+  border-radius: 100px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    transform .22s ease,
+    box-shadow .25s ease,
+    background .25s ease;
+
+}
+
+
+/* Primary hover */
+
+#altus-hero .altus-btn-primary:hover {
+
+  transform:
+    translateY(-2px);
+
+  background: #1D4ED8;
+
+  box-shadow:
+    0 12px 28px
+    rgba(16,179,254,.4);
+
+}
+
+
+/* Outline */
+
+#altus-hero .altus-btn-outline {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  border:
+    1.6px solid
+    #10B3FE;
+
+  color: #FFFFFF;
+
+  font-size: 13.5px;
+
+  font-weight: 600;
+
+  padding:
+    12px
+    26px;
+
+  border-radius: 100px;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    .25s;
+
+}
+
+
+/* Outline hover */
+
+#altus-hero .altus-btn-outline:hover {
+
+  background: #10B3FE;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(16,179,254,.35);
+
+}
+
+
+/* =========================================================
+   TRUST BAR
+========================================================= */
+
+#altus-hero .altus-trust {
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 3;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.1);
+
+  background:
+    rgba(5,5,10,.45);
+
+  backdrop-filter:
+    blur(8px);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+
+  opacity: 0;
+
+  animation:
+    altus-fade-up
+    1s
+    ease
+    2.75s
+    forwards;
+
+}
+
+
+/* Trust inner */
+
+#altus-hero .altus-trust-inner {
+
+  max-width: 1460px;
+
+  margin: 0 auto;
+
+  padding:
+    18px
+    32px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 34px;
+
+  overflow: hidden;
+
+}
+
+
+/* Trust label */
+
+#altus-hero .altus-trust-label {
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: .14em;
+
+  color:
+    rgba(255,255,255,.55);
+
+  white-space: nowrap;
+
+  flex-shrink: 0;
+
+}
+
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+#altus-hero .altus-marquee {
+
+  overflow: hidden;
+
+  flex: 1;
+
+  mask-image:
+    linear-gradient(
+      90deg,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+
+  -webkit-mask-image:
+    linear-gradient(
+      90deg,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+
+}
+
+
+#altus-hero .altus-marquee-track {
+
+  display: flex;
+
+  gap: 54px;
+
+  width: max-content;
+
+  animation:
+    altus-marquee
+    26s
+    linear
+    infinite;
+
+}
+
+
+#altus-hero .altus-marquee-track span {
+
+  font-size: 13.5px;
+
+  font-weight: 600;
+
+  letter-spacing: .1em;
+
+  color:
+    rgba(255,255,255,.5);
+
+  white-space: nowrap;
+
+}
+
+
+#altus-hero .altus-marquee-track span b {
+
+  color: #10B3FE;
+
+  font-weight: 600;
+
+}
+
+
+@keyframes altus-marquee {
+
+  to {
+
+    transform:
+      translateX(-50%);
+
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 820px) {
+
+  #altus-hero {
+
+    min-height: 100svh;
+
+  }
+
+
+  #altus-hero .altus-hero-inner {
+
+    padding:
+      130px
+      24px
+      130px;
+
+  }
+
+
+  #altus-hero .altus-hero-sub {
+
+    font-size: 16px;
+
+    max-width: 560px;
+
+  }
+
+
+  #altus-hero .altus-trust-inner {
+
+    padding:
+      16px
+      24px;
+
+    gap: 20px;
+
+  }
+
+
+  #altus-hero .altus-trust-label {
+
+    display: none;
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  #altus-hero {
+
+    min-height: 100svh;
+
+  }
+
+
+  #altus-hero .altus-hero-inner {
+
+    padding:
+      120px
+      20px
+      120px;
+
+  }
+
+
+  #altus-hero .altus-hero-title {
+
+    font-size:
+      clamp(42px, 12vw, 64px);
+
+    line-height: 1.05;
+
+  }
+
+
+  #altus-hero .altus-hero-sub {
+
+    margin-top: 22px;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+  }
+
+
+  #altus-hero .altus-hero-ctas {
+
+    margin-top: 30px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+
+  #altus-hero .altus-btn-primary,
+  #altus-hero .altus-btn-outline {
+
+    font-size: 13px;
+
+    padding:
+      12px
+      22px;
+
+  }
+
+
+  #altus-hero .altus-trust-inner {
+
+    padding:
+      15px
+      20px;
+
+  }
+
+
+  #altus-hero .altus-marquee-track span {
+
+    font-size: 12px;
+
+  }
+
+
+  #altus-hero .altus-streak-1 {
+
+    width: 70vw;
+
+  }
+
+
+  #altus-hero .altus-streak-2 {
+
+    width: 60vw;
+
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY — REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #altus-hero *,
+  #altus-hero *::before,
+  #altus-hero *::after {
+
+    animation-duration: .01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: .01ms !important;
+
+  }
+
+
+  #altus-hero .altus-mask > span {
+
+    transform: none;
+
+  }
+
+
+  #altus-hero .altus-hero-sub,
+  #altus-hero .altus-hero-ctas,
+  #altus-hero .altus-trust {
+
+    opacity: 1;
+
+  }
+
+}
+
+</style>
+
+
+<script>
+
+(function () {
+
+  "use strict";
+
+  /*
+   * ALTUS HERO
+   * Lightweight JavaScript enhancement.
+   * The visual animation itself is CSS-based.
+   */
+
+  const hero = document.getElementById("altus-hero");
+
+  if (!hero) return;
+
+
+  /*
+   * Optional subtle mouse movement
+   * on desktop for a cinematic depth effect.
+   */
+
+  if (
+    window.matchMedia &&
+    window.matchMedia("(pointer:fine)").matches
+  ) {
+
+    const background =
+      hero.querySelector(".altus-hero-bg");
+
+    let targetX = 0;
+    let targetY = 0;
+
+    let currentX = 0;
+    let currentY = 0;
+
+
+    hero.addEventListener(
+      "mousemove",
+      function (event) {
+
+        const rect =
+          hero.getBoundingClientRect();
+
+        const x =
+          (event.clientX - rect.left)
+          / rect.width
+          - 0.5;
+
+        const y =
+          (event.clientY - rect.top)
+          / rect.height
+          - 0.5;
+
+        targetX = x * 10;
+        targetY = y * 6;
+
+      },
+      { passive: true }
+    );
+
+
+    function animateDepth() {
+
+      currentX +=
+        (targetX - currentX) * 0.035;
+
+      currentY +=
+        (targetY - currentY) * 0.035;
+
+
+      /*
+       * Preserve the background's CSS animation
+       * by using a subtle additional transform
+       * through a CSS custom property.
+       */
+
+      background.style.setProperty(
+        "--altus-mouse-x",
+        currentX + "px"
+      );
+
+      background.style.setProperty(
+        "--altus-mouse-y",
+        currentY + "px"
+      );
+
+
+      requestAnimationFrame(animateDepth);
+
+    }
+
+
+    animateDepth();
+
+  }
+
+
+})();
+
+</script>
